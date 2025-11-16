@@ -58,8 +58,10 @@ Open your browser and access the local PHP interface to interact with the databa
 
 This project is developed by:
 
-- **[@Akram-mal](https://github.com/Akram-mal)**  
 - **[@Arshad-ahmad123](https://github.com/Arshad-ahmad123)**  
+
+- **[@Akram-mal](https://github.com/Akram-mal)**  
+
 - **[@MohammadRAFITahiri](https://github.com/MohammadRAFITahiri)**  
 
 ---
