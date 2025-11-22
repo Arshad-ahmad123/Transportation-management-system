@@ -1,0 +1,441 @@
+/** @format */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Search Bar ===== */
+.Search {
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.Search button {
+  border: 0;
+  height: 30px;
+  width: 50px;
+  background-color: rgb(87, 156, 199);
+  color: white;
+  cursor: pointer;
+}
+.Search input {
+  border: 0;
+  height: 30px;
+  padding: 0 10px;
+  width: 200px;
+}
+/* ===== Navigation Bar ===== */
+.navigation_bar {
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.navigation_bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation_bar ul li {
+  display: inline-block;
+  margin: 0 10px;
+  
+}
+.navigation_bar ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  
+}
+.navigation_bar ul li a:hover {
+  color: white;
+}
+
+/* ===== Layout Divisions ===== */
+.outer_div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Agencylist_div {
+  width: 60%;
+  background: lightyellow;
+  border-right: 1px solid lightgray;
+  border-bottom-left-radius: 12px;
+  display: inline-block;
+  float: left;
+}
+.ticket_list_div{
+    width: 100%;
+  background: lightyellow;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.Manupulate_div {
+  width: 40%;
+  background: lightyellow;
+  border-left: 1px solid lightgray;
+  border-bottom-right-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+H1 {
+  text-align: center;
+  color: gray;
+  margin-bottom: 25px;
+}
+Table {
+  width: 100%;
+  border-collapse: collapse;
+}
+Table th,
+table td {
+  padding: 12px;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+}
+Th {
+  background-color: #007bff;
+  color: white;
+}
+Tr:hover {
+  background-color: lightgray;
+}
+.selected {
+  background-color: lightgray;
+}
+.inside_manup1 ul li {
+  margin-top: 0px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+.inside_manup1 ul li a {
+  color: black;
+  text-decoration: none;
+}
+.book_div {
+  width: 100%;
+  background: lightyellow;
+  border-left: 1px solid lightgray;
+  border-bottom-right-radius: 12px;
+  display: inline-block;
+}
+.book_div form {
+  position: relative;
+  left: 20px;
+}
+.book_div form input {
+  width: 60%;
+}
+.book_div form .submit {
+  width: 20%;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+.submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #0056b3;
+}
+
+
+.insert_div {
+  width: 39.5%;
+  background: lightyellow;
+  border-left: 1px solid lightgray;
+  border-bottom-right-radius: 12px;
+  display: inline-block;
+}
+.insert_div form {
+  position: relative;
+  left: 20px;
+}
+.insert_div form input {
+  width: 60%;
+}
+.insert_div form .submit {
+  width: 20%;
+  position: absolute;
+  right: 40px;
+}
+.insert_div_tick {
+  width: 100%;
+  height: 400px;
+  background-color: bisque;
+}
+.insert_div_tick form {
+  position: relative;
+  left: 20px;
+}
+.insert_div_tick form input {
+  width: 60%;
+}
+.insert_div_tick .submit {
+  width: 20%;
+  position: absolute;
+  right: 40px;
+}
+.user_body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.User-container {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+.h2_user {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+.btn_user {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn_user:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 3px 0;
+  font-size: 0.9rem;
+}
+
+/* For Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .Agencylist_div {
+    width: auto;
+    border-right: none;
+    border-bottom-left-radius: 0;
+  }
+  .ticket_list_div{
+    width: auto;
+  background: lightyellow;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+  .Manupulate_div {
+    width: 100%;
+    border-left: none;
+    border-bottom-right-radius: 0;
+    margin-top: 10px;
+  }
+  .book_div {
+  width: 100%;
+  background: lightyellow;
+  border-left: 1px solid lightgray;
+  border-bottom-right-radius: 12px;
+  display: inline-block;
+}
+.insert_div {
+  width: 100%;
+}
+  .navigation_bar {
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.navigation_bar ul li {
+  display: inline-block;
+  font-size: medium;
+  margin: 0 5px;
+}
+.Search {
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  align-items: center;
+  position: fixed;
+}
+.Search button {
+  border: 0;
+  height: 20px;
+  width: 30px;
+  background-color: #045bb8;
+  color: white;
+  cursor: pointer;
+}
+.Search input {
+  border: 0;
+  height: 20px;
+  padding: 0 10px;
+  width: 150px;
+}
+}
+
+/* For Mobile Devices (≤ 768px) */
+@media (max-width: 768px) {
+  .navigation_bar {
+    position: fixed;
+    flex-direction: row;
+    width:100%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+  }
+  .navigation_bar ul li {
+    display: inline;
+    margin: 8px 0;
+  }
+.Search {
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  align-items: center;
+  position: fixed;
+}
+.Search button {
+  border: 0;
+  height: 20px;
+  width: 30px;
+  background-color: rgb(87, 156, 199);
+  color: white;
+  cursor: pointer;
+}
+.Search input {
+  border: 0;
+  height: 20px;
+  padding: 0 10px;
+  width: 150px;
+}
+  .outer_div {
+    flex-direction: column;
+  }
+
+  .Manupulate_div {
+    position: fixed;
+    width: 100%;
+  }
+.insert_div {
+  position: fixed;
+  width: 100%;
+}
+.insert_div form {
+  position: relative;
+  left: 20px;
+}
+.insert_div form input {
+  width: 50%;
+}
+.insert_div form .submit {
+  width: 20%;
+  position: absolute;
+  right: 40px;
+}
+.insert_div_tick {
+  width: 100%;
+  height: 400px;
+  background-color: bisque;
+}
+.insert_div_tick form {
+  position: relative;
+  left: 20px;
+}
+.insert_div_tick form input {
+  width: 60%;
+}
+.insert_div_tick .submit {
+  width: 20%;
+  position: absolute;
+  right: 40px;
+}
+}
+
+/* For Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+.Search {
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  align-items: center;
+  position: fixed;
+}
+.Search button {
+  border: 0;
+  height: 20px;
+  width: 25px;
+  background-color: rgb(87, 156, 199);
+  color: white;
+  cursor: pointer;
+}
+.Search input {
+  border: 0;
+  height: 20px;
+  padding: 0 10px;
+  width: 130px;
+}
+  .btn_user {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .User-container {
+    padding: 20px;
+  }
+  table th,
+  table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+
